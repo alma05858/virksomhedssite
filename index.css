@@ -1,0 +1,408 @@
+/************** reset ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*********************************/
+
+/************** Menu (desktop) **************/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Gør det muligt at placere elementer korrekt */
+  padding: 20px;
+  background-color: #ffffff;
+  position: relative;
+  border-bottom: 1.5px solid #000000;
+}
+
+.logo {
+  width: 75px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "B612 Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.menu li a.active {
+  border-bottom: 2px solid #000;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+    text-align: right;
+    top: 94px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav.active .menu li {
+    margin: 20px 20px;
+  }
+
+  nav.active .menu a {
+    font-family: "B612 Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+/********************************/
+
+/****************** basics *************/
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  font-family: "B612 Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "B612 Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  border: 2px solid black;
+  padding: 8px;
+}
+
+/*****************************************/
+
+/****************** maudes intro  sektion *************/
+
+.maudes-intro {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 2px 100px 2px;
+}
+
+.maudes-intro-bg {
+  background-color: var(--primary-color);
+  padding: 0 40px 55px 40px;
+}
+
+.maudes-intro img {
+  width: 250px;
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.maudes-intro p {
+  margin: 0 20px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .maudes-intro p {
+    align-self: center;
+    display: block;
+    margin: 0 400px;
+  }
+}
+
+/*********************************************/
+
+/****************** maudes intro  sektion2 *************/
+
+.maudes-intro2 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.maudes-intro2-bg {
+  background-color: var(--primary-color);
+  padding: 0 40px 55px 40px;
+}
+
+.maudes-intro2 img {
+  padding-bottom: 40px;
+}
+
+.maudes-intro2 p {
+  padding: 15px 0 25px 0;
+}
+
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+  }
+
+  .grid_2-1 > div:first-child {
+    order: 2;
+  }
+
+  .grid_2-1 > div:last-child {
+    order: 1;
+  }
+
+  .maudes-intro2 h2 {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+
+  .maudes-intro2 p {
+    text-align: left;
+    max-width: 65ch;
+    line-height: 24px;
+  }
+}
+
+/*********************************************/
+
+/************* insta sektion *************/
+
+.instagram-sektion {
+  background-color: var(--secondary-color);
+  padding: 75px 5px;
+  text-align: center;
+}
+
+.insta-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.insta-scroll img {
+  padding-top: 10px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 800px) {
+  .instagram-sektion {
+    padding: 100px 20px;
+  }
+
+  .insta-scroll img {
+    width: 300px;
+  }
+
+  .instagram-sektion h2 {
+    padding-bottom: 15px;
+  }
+}
+
+/*****************************************/
+
+/************* selskabs sektion *************/
+
+.selskab-sekstion {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.selskab-sekstion-bg {
+  background-color: var(--senary-color);
+  padding: 55px 40px 55px 40px;
+}
+
+.selskab-sekstion p {
+  padding: 15px 0 25px 0;
+}
+
+@media (min-width: 800px) {
+  .selskab-sekstion {
+    padding: 100px 0;
+  }
+  .selskab-sekstion p {
+    max-width: 75ch;
+    line-height: 24px;
+  }
+}
+
+/********************************************/
+
+/************** gavekort sektion ************/
+
+.gavekort-sektion {
+  max-width: 1200px;
+  padding: 75px 40px 40px 40px;
+  margin: auto;
+}
+
+.gavekort-sektion-bg {
+  background-color: var(--primary-color);
+}
+
+.gavekort-sektion p {
+  padding: 5px 0 25px 0;
+}
+
+.pandekager-img {
+  padding-bottom: 20px;
+}
+
+.grid_2-1- {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.gavekort-boks {
+  display: grid;
+}
+
+.gif {
+  width: 200px;
+  justify-self: end;
+}
+
+.gavekort-boks button {
+  justify-self: start;
+  align-self: start;
+}
+
+@media (min-width: 800px) {
+  .grid_2-1- {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 85px 40px 75px 40px;
+  }
+}
+
+/********************************************/
+
+/***************** Footer *******************/
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-kontakt {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 2.5;
+}
+.footer-tider {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 2.5;
+}
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: var(--secondary-color);
+}
+
+.footer-adresse {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer-kontakt {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .footer-adresse {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .footer-tider {
+    grid-column: 3 / 4;
+  }
+  .footer-logo {
+    grid-column: 2 / 3;
+  }
+}
+/*****************************************/
