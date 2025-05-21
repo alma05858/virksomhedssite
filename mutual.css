@@ -1,0 +1,11 @@
+html {
+  --primary-color: #f7eee5;
+  --secondary-color: #ffffff;
+  --tertiary-color: #000000;
+  --quaternary-color: #f1e8c6;
+  --quinary-color: #fbf5dd;
+  --senary-color: #ffcfcf;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "B612 Mono", monospace;
+}
