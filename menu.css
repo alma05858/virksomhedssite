@@ -173,7 +173,7 @@ a {
   font-family: "B612 Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  line-height: 0;
+  line-height: 0.5;
 }
 .footer-adresse h3 {
   font-family: Poppins;
@@ -1103,7 +1103,7 @@ a {
     position: absolute;
 
     left: 600px;
-    top: 750px;
+    top: 810px;
   }
 
   .bread {
@@ -1114,8 +1114,8 @@ a {
 
     position: absolute;
 
-    left: 270px;
-    top: 730px;
+    left: 290px;
+    top: 710px;
   }
 
   .lemo-desk {
@@ -1150,8 +1150,9 @@ a {
     position: absolute;
 
     left: 190px;
-    bottom: -40px;
+    bottom: -100px;
   }
+
   .blom-doodle {
     width: 111.564px;
     height: 100px;
@@ -1160,7 +1161,7 @@ a {
     position: absolute;
 
     left: 70px;
-    bottom: -20px;
+    bottom: -300px;
   }
   /***************************************FOOTER************************************************/
   @media (min-width: 800px) {
