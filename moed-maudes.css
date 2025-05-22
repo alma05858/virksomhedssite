@@ -237,7 +237,7 @@ a {
   padding-top: 60px;
 }
 
-/********** Desktop *********/
+/******************** Desktop *******************/
 @media (min-width: 800px) {
   .desktop-logo {
     display: none;
