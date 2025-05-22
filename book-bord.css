@@ -14,8 +14,7 @@ p {
   font-style: normal;
 }
 
-/**************menu*****************/
-
+/***************** Navigation *******************/
 header {
   display: flex;
   align-items: center;
@@ -115,19 +114,24 @@ nav {
     font-style: normal;
   }
 }
+/***************************************/
+.booking-sektion {
+  max-width: 1000px;
+  margin-inline: auto;
+}
 
 .booking-blok {
   background-color: #f7eee5;
   padding: 4rem 1rem;
   display: grid;
-  grid-template-columns: 5fr 3fr 1fr;
-  grid-template-rows: 5fr 1fr 5fr;
+  grid-template-columns: 4fr 7fr 3fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr;
 }
 
 .booking-billede {
-  grid-column: 1/3;
+  grid-column: 1/4;
   grid-row: 1/3;
-  width: 80%;
+  width: 100%;
   align-self: stretch;
   object-fit: cover;
 }
@@ -136,7 +140,7 @@ nav {
   background-color: #fbf5dd;
   padding: 2rem;
   line-height: 1.6;
-  grid-column: 2/3;
+  grid-column: 3/5;
   grid-row: 2/4;
 }
 
@@ -245,5 +249,89 @@ nav {
     font-size: 0.7rem;
     padding: 0.3rem 0.6rem;
     border-width: 1.5px;
+  }
+}
+
+/***************** Footer *******************/
+.copyright {
+  text-align: center;
+  padding-top: 70px;
+}
+.footer_grid {
+  display: grid;
+}
+
+.footer-kontakt {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 2.5;
+  display: grid;
+  grid-template-columns: 1fr;
+  order: 10;
+}
+
+.footer-kontakt a {
+  color: #000;
+  text-align: center;
+  font-family: "B612 Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+}
+.footer-tider {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 2.5;
+}
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 70px;
+  padding-top: 20px;
+}
+
+.footer-adresse {
+  text-align: center;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .footer-kontakt {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .footer-adresse {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .footer-tider {
+    grid-column: 3 / 4;
+  }
+  .footer-logo {
+    grid-column: 2 / 3;
   }
 }

@@ -14,7 +14,7 @@ p {
   font-style: normal;
 }
 
-/*****************menu**************/
+/***************** Navigation *******************/
 header {
   display: flex;
   align-items: center;
@@ -114,6 +114,7 @@ nav {
     font-style: normal;
   }
 }
+/***********************************/
 
 .kontakt {
   text-align: center;
@@ -176,5 +177,88 @@ nav {
     width: 48%;
     height: auto;
     margin-bottom: 0;
+  }
+}
+/***************** Footer *******************/
+.copyright {
+  text-align: center;
+  padding-top: 70px;
+}
+.footer_grid {
+  display: grid;
+}
+
+.footer-kontakt {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 2.5;
+  display: grid;
+  grid-template-columns: 1fr;
+  order: 10;
+}
+
+.footer-kontakt a {
+  color: #000;
+  text-align: center;
+  font-family: "B612 Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+}
+.footer-tider {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 2.5;
+}
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 70px;
+  padding-top: 20px;
+}
+
+.footer-adresse {
+  text-align: center;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .footer-kontakt {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .footer-adresse {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .footer-tider {
+    grid-column: 3 / 4;
+  }
+  .footer-logo {
+    grid-column: 2 / 3;
   }
 }
