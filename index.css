@@ -246,6 +246,14 @@ button {
   text-align: center;
 }
 
+.instagram-sektion a {
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
 .insta-scroll {
   display: flex;
   overflow-x: auto;
@@ -270,7 +278,7 @@ button {
     width: 300px;
   }
 
-  .instagram-sektion h2 {
+  .instagram-sektion a {
     padding-bottom: 15px;
   }
 }
@@ -285,7 +293,7 @@ button {
 }
 
 .selskab-sekstion-bg {
-  background-color: var(--senary-color);
+  background-color: var(--quinary-color);
   padding: 55px 40px 55px 40px;
 }
 
@@ -334,11 +342,6 @@ button {
   display: grid;
 }
 
-.gif {
-  width: 200px;
-  justify-self: end;
-}
-
 .gavekort-boks button {
   justify-self: start;
   align-self: start;
@@ -348,62 +351,139 @@ button {
   .grid_2-1- {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    padding: 85px 40px 75px 40px;
+    gap: 80px;
+    padding: 70px 40px 75px 40px;
   }
 }
 
 /********************************************/
-
 /***************** Footer *******************/
-.copyright {
-  text-align: center;
-  margin-top: 20px;
+footer {
+  background-color: #ffffff;
+  padding: 70px;
+  padding-top: 20px;
+}
+
+.footer_grid {
+  display: grid;
+}
+
+.footer_grid p {
+  padding-top: 10px;
+}
+
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 22px;
+  max-width: 120px;
 }
 
 .footer-kontakt {
   text-align: center;
   margin-top: 30px;
   line-height: 2.5;
-}
-.footer-tider {
-  text-align: center;
-  margin-top: 30px;
-  line-height: 2.5;
-}
-.footer-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  order: 10;
 }
 
-footer {
-  background-color: var(--secondary-color);
+.footer-kontakt a {
+  padding-bottom: 20px;
+}
+
+a {
+  color: #000000;
+}
+
+.footer-kontakt a {
+  color: #000;
+  text-align: center;
+  font-family: "B612 Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.smiley-rapporter {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "B612 Mono", monospace;
+  order: 1;
 }
 
 .footer-adresse {
   text-align: center;
 }
 
+.footer-adresse h3 {
+  padding-top: 10px;
+}
+
+.footer-adresse p {
+  padding-top: 20px;
+}
+
+.footer-tider {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.mobile-logo {
+  display: none;
+  padding-top: 60px;
+}
+
+/********** Desktop *********/
 @media (min-width: 800px) {
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
   .footer_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 50px;
   }
+
+  .footer-logo {
+    grid-column: 2 / 3;
+  }
+
   .footer-kontakt {
     grid-column: 1;
     grid-row: 1;
   }
+
+  .smiley-rapporter {
+    grid-row: 3;
+    text-align: center;
+    font-family: "B612 Mono", monospace;
+    text-decoration: none;
+  }
+
   .footer-adresse {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
+
+  .footer-adresse h3 {
+    padding-top: 20px;
+  }
   .footer-tider {
     grid-column: 3 / 4;
-  }
-  .footer-logo {
-    grid-column: 2 / 3;
   }
 }
 /*****************************************/
