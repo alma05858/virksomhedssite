@@ -17,7 +17,7 @@ img {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Gør det muligt at placere elementer korrekt */
+  justify-content: space-between;
   padding: 20px;
   background-color: #ffffff;
   position: relative;
@@ -119,19 +119,19 @@ nav {
 /****************** basics *************/
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
   font-style: normal;
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 600;
   font-style: normal;
 }
 
 p {
-  font-family: "B612 Mono", monospace;
+  font-family: var(--font-body);
   font-weight: 400;
   font-style: normal;
 }
@@ -178,6 +178,7 @@ button {
     align-self: center;
     display: block;
     margin: 0 400px;
+    padding-bottom: 130px;
   }
 }
 
