@@ -93,118 +93,119 @@
   }
 }
 
-.
 /************************************* FOOTER ***********************/
-.footer-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer {
+  background-color: #ffffff;
+  padding: 70px;
+  padding-top: 20px;
 }
 
-.col-1,
-.col-2,
-.col-3 .col-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 0;
+.footer_grid {
+  display: grid;
+  margin: 0;
   padding: 0;
-  width: auto;
+  box-sizing: border-box;
 }
 
-.col-1 {
-  order: 3;
-  margin-top: 20px;
-}
-
-.col-1 h3 {
-  color: #000;
-  text-align: center;
-  font-family: "B612 Mono";
-  font-size: 5px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 15px;
-}
-
-.col-1 a {
-  color: #000;
-  font-family: "B612 Mono";
-  font-size: 5px;
-  font-style: normal;
+.footer_grid p {
+  padding-top: 10px;
+  font-family: "B612 Mono", monospace;
   font-weight: 400;
-  line-height: 15px;
+  font-style: normal;
 }
 
-.col-2 img {
-  width: 59px;
-  height: 59px;
-  flex-shrink: 0;
-  aspect-ratio: 1/1;
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 22px;
+  max-width: 120px;
 }
 
-.col-3 h3 {
-  color: #000;
+.footer-kontakt {
   text-align: center;
-  font-family: "B612 Mono";
-  font-size: 5px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 15px;
-}
-
-.col-3 p {
-  color: #000;
-  font-family: "B612 Mono";
-  font-size: 5px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 15px;
-}
-
-.rapport {
   margin-top: 30px;
-  margin-bottom: 20px;
+  line-height: 2.5;
+  display: grid;
+  grid-template-columns: 1fr;
+  order: 10;
 }
 
-.col-2 {
-  order: 2;
-  margin: 0;
-  padding-top: 50px;
+.footer-kontakt h3 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0%;
+}
+.footer-kontakt a {
+  padding-bottom: 20px;
 }
 
-.col-2 img {
-  padding-bottom: 0px;
+a {
+  color: #000000;
 }
 
-.col-4 {
-  order: 3;
-  margin: 0;
-}
-
-.col-3 {
-  order: 2;
-  margin: 0;
-  padding-right: 0px;
-}
-
-.h3 {
-  padding-bottom: 0;
-}
-
-.adresse-mo {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.col-4 p {
+.footer-kontakt a {
   color: #000;
   text-align: center;
   font-family: "B612 Mono";
-  font-size: 5px;
+  font-size: 15px;
   font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 0;
+}
+
+.smiley-rapporter {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "B612 Mono", monospace;
+  order: 1;
+}
+
+.footer-adresse {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-adresse p {
+  padding-top: 20px;
+  font-family: "B612 Mono", monospace;
   font-weight: 400;
-  line-height: 50px;
+  font-style: normal;
+  line-height: 0;
+}
+.footer-adresse h3 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.footer-tider {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-tider h3 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  padding: 0;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 70px;
+  font-family: "B612 Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mobile-logo {
+  display: none;
+  padding-top: 60px;
 }
 
 /********************************* MENU KORT ***********************************/
@@ -1164,136 +1165,49 @@
     bottom: -20px;
   }
   /***************************************FOOTER************************************************/
-  .footer {
-    padding: 2rem;
-  }
-  .footer-top {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  @media (min-width: 800px) {
+    .desktop-logo {
+      display: none;
+    }
 
-  .footer-bottom {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .footer div {
-    text-align: center;
-  }
+    .mobile-logo {
+      display: block;
+    }
 
-  .col-1 {
-    display: block;
-    text-decoration: none;
-    margin-top: 50px;
-    width: 400px;
-    height: 190.461px;
-    flex-shrink: 0;
-    color: #000;
+    .footer_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 50px;
+    }
 
-    text-align: center;
-    font-family: "B612 Mono";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
+    .footer-logo {
+      grid-column: 2 / 3;
+    }
 
-    margin-right: 100px;
-    padding-left: 150px;
-    padding-top: 50px;
-  }
+    .footer-kontakt {
+      grid-column: 1;
+      grid-row: 1;
+    }
 
-  .col-1 a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #000;
-    gap: 50px;
-  }
+    .smiley-rapporter {
+      grid-row: 3;
+      text-align: center;
+      font-family: "B612 Mono", monospace;
+      text-decoration: none;
+    }
 
-  .col-2 {
-    display: flex;
-    flex-direction: column;
-    color: #000;
-    text-align: center;
-    font-family: "B612 Mono";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px;
+    .footer-adresse {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
 
-    padding-right: 100px;
-  }
+    .footer-adresse h3 {
+      padding-top: 20px;
+    }
 
-  .col-2 img {
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0;
-    aspect-ratio: 100;
-    padding-bottom: 60px;
-    margin-left: 25px;
-    margin-top: 25px;
-  }
-
-  .col-2 p {
-    margin-right: 100px;
-  }
-
-  .rapport {
-    color: #000;
-    text-align: center;
-    font-family: "B612 Mono";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-underline-position: from-font;
-  }
-
-  .h3 {
-    color: #000;
-    text-align: center;
-    font-family: "B612 Mono";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 50px;
-  }
-
-  .col-3 {
-    padding-right: 200px;
-    padding-top: 50px;
-  }
-
-  .adresse-mo {
-    padding-bottom: 30px;
-  }
-  .col-3 p {
-    color: #000;
-    text-align: center;
-    font-family: "B612 Mono";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-  }
-
-  .menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    cursor: pointer;
-  }
-
-  .col-4 {
-    color: #000;
-    text-align: center;
-    font-family: "B612 Mono";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px;
+    .footer-tider {
+      grid-column: 3 / 4;
+    }
   }
 }
