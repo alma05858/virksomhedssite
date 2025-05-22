@@ -28,7 +28,9 @@ header {
 .logo {
   width: 75px;
 }
-
+.logo img {
+  width: 100%;
+}
 nav {
   flex: 1;
   display: flex;
@@ -124,7 +126,7 @@ nav {
   background-color: #f7eee5;
   padding: 4rem 1rem;
   display: grid;
-  grid-template-columns: 4fr 7fr 3fr 2fr;
+  grid-template-columns: 4fr 5fr 4fr 1fr 1fr;
   grid-template-rows: 1fr 2fr 2fr;
 }
 
@@ -143,7 +145,10 @@ nav {
   grid-column: 3/5;
   grid-row: 2/4;
 }
-
+.table {
+  grid-column: 4/6;
+  grid-row: 3/4;
+}
 .booking-tekst h2 {
   border-bottom: 2px solid #44646a;
   display: inline-block;
