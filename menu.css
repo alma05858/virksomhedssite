@@ -703,21 +703,14 @@ a {
 
   .header1 {
     text-align: center;
-    margin-top: 50px;
     color: #000;
     font-family: Poppins;
-    font-size: 50px;
+    font-size: 250%;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
 
-    padding-left: 55px;
+    padding-top: 70px;
   }
 
   .morgenmad h2 {
@@ -927,17 +920,19 @@ a {
     margin: 0 auto;
     padding-top: 80px;
     margin-top: 100px;
+    padding-bottom: 250px;
   }
 
   .header1-desk {
     text-align: center;
     color: #000;
     font-family: Poppins;
-    font-size: 56px;
+    font-size: 250%;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
+
   .kage p {
     text-align: center;
     color: #000;
@@ -974,8 +969,23 @@ a {
     text-align: center;
   }
 
-  .header1 {
+  .header1-desk h1 {
+    text-align: center;
+    text-align: center;
+    color: #000;
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .header1-desk {
     display: block;
+  }
+
+  .header1 {
+    text-align: center;
   }
 
   .linebreak-mo {
@@ -1005,6 +1015,7 @@ a {
   .bage2 h2 {
     margin-left: 10px;
   }
+
   /***************** layout *************************/
   .con12 {
     display: flex;
