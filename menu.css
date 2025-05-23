@@ -1174,6 +1174,12 @@ a {
     left: 70px;
     bottom: -300px;
   }
+
+  .lottie {
+    position: relative;
+    width: 150px;
+    left: 180px;
+  }
   /***************************************FOOTER************************************************/
   @media (min-width: 800px) {
     .desktop-logo {
