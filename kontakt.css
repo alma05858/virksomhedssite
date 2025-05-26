@@ -213,7 +213,9 @@ footer {
 .footer_grid p {
   padding-top: 10px;
 }
-
+footer_grid h3 {
+  font-family: "Poppins", sans-serif;
+}
 .footer-logo {
   display: block;
   margin-left: auto;
@@ -236,6 +238,12 @@ footer {
 
 a {
   color: #000000;
+}
+
+.footer-kontakt {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .footer-kontakt a {
@@ -261,6 +269,9 @@ a {
 
 .footer-adresse h3 {
   padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .footer-adresse p {
@@ -270,6 +281,12 @@ a {
 .footer-tider {
   text-align: center;
   margin-top: 30px;
+}
+
+.footer-tider h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .copyright {
@@ -282,7 +299,7 @@ a {
   padding-top: 60px;
 }
 
-/******************** Desktop *******************/
+/********** Desktop *********/
 @media (min-width: 800px) {
   .desktop-logo {
     display: none;
