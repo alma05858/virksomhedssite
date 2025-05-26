@@ -136,7 +136,7 @@ p {
   font-style: normal;
 }
 
-button {
+.button-css {
   cursor: pointer;
   background-color: transparent;
   font-family: "B612 Mono", monospace;
@@ -144,6 +144,9 @@ button {
   font-style: normal;
   border: 2px solid black;
   padding: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
 }
 
 /*****************************************/
@@ -209,11 +212,6 @@ button {
   padding-bottom: 20px;
   line-height: 24px;
 }
-
-.maudes-intro2 button {
-  padding-top: 8px;
-}
-
 .grid_2-1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -362,7 +360,7 @@ button {
   display: grid;
 }
 
-.gavekort-boks button {
+.button-css {
   justify-self: start;
   align-self: start;
 }
