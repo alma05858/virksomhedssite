@@ -171,6 +171,7 @@ button {
 .maudes-intro p {
   margin: 0 20px;
   text-align: center;
+  line-height: 24px;
 }
 
 @media (min-width: 800px) {
@@ -200,8 +201,17 @@ button {
   padding-bottom: 40px;
 }
 
+.maudes-intro2 h2 {
+  padding-bottom: 8px;
+}
+
 .maudes-intro2 p {
-  padding: 15px 0 25px 0;
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+
+.maudes-intro2 button {
+  padding-top: 8px;
 }
 
 .grid_2-1 {
@@ -297,8 +307,17 @@ button {
   padding: 55px 40px 55px 40px;
 }
 
+.selskab-sekstion h2 {
+  padding-bottom: 8px;
+}
+
 .selskab-sekstion p {
-  padding: 15px 0 25px 0;
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+
+.selskab-sekstion button {
+  padding-top: 8px;
 }
 
 @media (min-width: 800px) {
@@ -326,7 +345,8 @@ button {
 }
 
 .gavekort-sektion p {
-  padding: 5px 0 25px 0;
+  line-height: 24px;
+  padding-bottom: 20px;
 }
 
 .pandekager-img {
