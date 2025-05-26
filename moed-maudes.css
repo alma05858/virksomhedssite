@@ -305,6 +305,10 @@ a {
   line-height: 1.5;
 }
 
+.text p {
+  padding-bottom: 20px;
+}
+
 .hero img {
   width: 100vw;
 }
