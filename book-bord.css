@@ -326,6 +326,12 @@ a {
   line-height: 20px;
 }
 
+.footer-kontakt {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .smiley-rapporter {
   margin-top: 30px;
   text-align: center;
@@ -339,6 +345,9 @@ a {
 
 .footer-adresse h3 {
   padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .footer-adresse p {
@@ -348,6 +357,12 @@ a {
 .footer-tider {
   text-align: center;
   margin-top: 30px;
+}
+
+.footer-tider h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .copyright {
