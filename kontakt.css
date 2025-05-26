@@ -1,3 +1,15 @@
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f7eee5;
+}
+
+main {
+  padding-inline: 1rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
 h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -18,7 +30,7 @@ p {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Gør det muligt at placere elementer korrekt */
+  justify-content: space-between;
   padding: 20px;
   background-color: #ffffff;
   position: relative;
@@ -40,7 +52,7 @@ nav {
 
 .menu {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   list-style: none;
 }
 
@@ -124,8 +136,13 @@ nav {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
+  line-height: 24px;
 }
-
+.tittel {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .lokation {
   padding: 2rem 1rem;
 }
@@ -265,7 +282,7 @@ a {
   padding-top: 60px;
 }
 
-/********** Desktop *********/
+/******************** Desktop *******************/
 @media (min-width: 800px) {
   .desktop-logo {
     display: none;

@@ -1,5 +1,17 @@
-main {
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
   background-color: #f7eee5;
+}
+
+main {
+  padding-inline: 1rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
@@ -18,7 +30,7 @@ p {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Gør det muligt at placere elementer korrekt */
+  justify-content: space-between;
   padding: 20px;
   background-color: #ffffff;
   position: relative;
@@ -31,6 +43,7 @@ header {
 .logo img {
   width: 100%;
 }
+
 nav {
   flex: 1;
   display: flex;
@@ -39,7 +52,7 @@ nav {
 
 .menu {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   list-style: none;
 }
 
@@ -157,14 +170,15 @@ nav {
 }
 
 .cta-knap {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.5rem 1rem;
   border: 2px solid #44646a;
   text-decoration: none;
   color: #44646a;
   font-weight: bold;
   text-transform: uppercase;
+  font-style: normal;
+  font-family: "B612 Mono", monospace;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .booking-blok2 {
@@ -199,8 +213,8 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .booking-blok {
-    grid-template-columns: 3fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .booking-billede {
@@ -215,12 +229,12 @@ nav {
   .booking-tekst {
     padding: 1rem;
     font-size: 0.8rem;
-    grid-column: 2/4;
-    grid-row: 2/4;
+    grid-column: 1/4;
+    grid-row: 3/4;
   }
   .table {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: -1/4;
   }
   .booking-blok2 {
     grid-template-columns: 1fr 1fr 3fr;
@@ -232,15 +246,15 @@ nav {
     height: 200px;
     object-fit: cover;
     margin-bottom: 0.5rem;
-    grid-column: 2/4;
+    grid-column: 1/4;
     grid-row: 1/3;
   }
 
   .booking-tekst2 {
     padding: 1rem;
     font-size: 0.8rem;
-    grid-column: 1/3;
-    grid-row: 2/4;
+    grid-column: 1/4;
+    grid-row: 3/4;
   }
 
   .booking-tekst h2,
@@ -275,7 +289,9 @@ footer {
 .footer_grid p {
   padding-top: 10px;
 }
-
+footer_grid h3 {
+  font-family: "Poppins", sans-serif;
+}
 .footer-logo {
   display: block;
   margin-left: auto;
