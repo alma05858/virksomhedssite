@@ -244,7 +244,7 @@ a {
   position: relative;
   width: 306px;
   height: 1055px;
-  padding: 1rem 2rem 5rem 2rem;
+  padding: 1rem 0.5rem 6rem 2rem;
   margin: 3rem;
 }
 
@@ -314,7 +314,7 @@ a {
   width: 306px;
   height: 424px;
   flex-shrink: 0;
-  padding: 2rem;
+  padding: 2rem 0.5rem 2rem 2rem;
   margin: 3rem;
 }
 
@@ -354,7 +354,7 @@ a {
   width: 306px;
   height: 375px;
   flex-shrink: 0;
-  padding: 2rem 2rem 5.5rem 2rem;
+  padding: 2rem 0.5rem 4rem 2rem;
   margin: 3rem;
 }
 
@@ -394,7 +394,7 @@ a {
   width: 306px;
   height: 273px;
   flex-shrink: 0;
-  padding: 2rem;
+  padding: 2rem 0.5rem 2rem 2rem;
   margin: 3rem;
 }
 
@@ -433,7 +433,7 @@ a {
   width: 306px;
   height: 242px;
   flex-shrink: 0;
-  padding: 2rem;
+  padding: 2rem 0.5rem 2rem 2rem;
   margin: 3rem;
 }
 
@@ -473,7 +473,7 @@ a {
   width: 306px;
   height: 961px;
   flex-shrink: 0;
-  padding: 0.5rem 2rem 2rem 2rem;
+  padding: 0.5rem 0.5rem 2rem 2rem;
   margin: 3rem;
 }
 
@@ -605,7 +605,7 @@ a {
   height: 50px;
   flex-shrink: 0;
 
-  bottom: 2.6cm;
+  bottom: 1.5cm;
   right: 100px;
 }
 
@@ -794,7 +794,6 @@ a {
   }
 
   .coffee {
-    background-color: #fbf5dd;
     position: relative;
     width: 306px;
     height: 424px;
@@ -1130,7 +1129,7 @@ a {
   }
 
   .lemo-desk {
-    width: 80px;
+    width: 50px;
     height: 70px;
     flex-shrink: 0;
 
